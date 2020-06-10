@@ -1,21 +1,9 @@
 $(function () {
-    $('.reviews-slider').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        arrows: false,
-        dots: true,
-        responsive: [
-            {
-                breakpoint: 1106,
-                settings: {
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
-                    slidesToShow: 1
-                }
-            },
-        ]
+    $('.Fairy-tail__slider').slick({ 
+        prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/arrow-back.svg" alt=""></button>',
+        nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/arrow-next.svg" alt=""></button>',
+        autoplay: true,
+        fade:true
     });
 
     $('.btn__menu').on('click', function () {
